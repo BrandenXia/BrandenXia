@@ -1,1 +1,2 @@
-[<img align="left" width="390" alt="Metrics" src="/github-metrics.svg">](#)
+[<img align="left" width="390" alt="Metrics" src="/general.svg">](#)
+[<img align="right" width="390" alt="🦑" src="/achievements.svg">](#)
