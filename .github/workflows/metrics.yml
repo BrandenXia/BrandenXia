@@ -12,9 +12,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: General
+        uses: lowlighter/metrics@latest
         with:
-          filename: core.svg
+          filename: general.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: header
           plugin_isocalendar: yes
@@ -22,3 +23,12 @@ jobs:
           plugin_stars: yes
           config_order: base.header, isocalendar, languages, stars
           optimize: css, xml
+      - name: Achievements
+        uses: lowlighter/metrics@latest
+        with:
+          filename: achievements.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_fortune: yes
